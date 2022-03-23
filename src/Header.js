@@ -17,7 +17,7 @@ function Header() {
         </div>
 
         <div className="header__right">
-
+/
         </div>
     </div>
   )
