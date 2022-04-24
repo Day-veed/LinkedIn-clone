@@ -19,9 +19,10 @@ function Feed() {
                     id: doc.id,
                     data: doc.data(),
                 }))
-            ),    
+            ),
+    
         }
-    }, []);
+    }, [])
 
     const sendPost = (e) => {
         e.preventDefault();
