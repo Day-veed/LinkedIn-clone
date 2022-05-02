@@ -12,12 +12,12 @@ function Header() {
     <div className='header'>
         
         <div className="header__left">
-            <img src="https://th.bing.com/th/id/R.ab725599921ce3ad5cc1ee2c82f1ee18?rik=7sSeFLtsaFtkcg&pid=ImgRaw&r=0&sres=1&sresct=1" 
+            <img src="https://th.bing.com/th/id/OIP.3Xx-bhPSwLFHedmoJxdMVAAAAA?w=181&h=181&c=7&r=0&o=5&dpr=1.25&pid=1.7" 
             alt=""/>
 
             <div className='header__search'>
                 <SearchIcon/>
-                <input type="text"/>
+                <input placeholder='Search' type="text"/>
             </div>
         </div>
 
