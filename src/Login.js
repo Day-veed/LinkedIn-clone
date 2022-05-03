@@ -26,7 +26,8 @@ function Login() {
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password).then(
             (userAuth) => {
-                userAuth.user
+                console.log(userAuth.user.updateProfile);
+                this.user
                     .updateProfile({
                         displayName: name,
                         photoURL: profilePic,
