@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./Login.css"
-//import { auth, db } from "./firebase";
+import { auth, db } from "./firebase";
 import { useDispatch } from 'react-redux';
 import { login } from './features/userSlice';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
+//import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 //import firebase from 'firebase/compat/app';
 
 
@@ -23,11 +23,11 @@ function Login() {
             return alert('Please enter a full name!')
         }
 
-        const auth = getAuth();
-        createUserWithEmailAndPassword(auth, email, password).then(
+        
+        auth.createUserWithEmailAndPassword( email, password).then(
             (userAuth) => {
                 console.log(userAuth.user.updateProfile);
-                this.user
+                userAuth.user
                     .updateProfile({
                         displayName: name,
                         photoURL: profilePic,
