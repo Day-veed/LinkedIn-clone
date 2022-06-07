@@ -16,17 +16,29 @@ function Login() {
 
     const loginToApp = (e) => {
         e.preventDefault();
+
+        auth.signInWithEmailAndPassword(email, password).then(
+            (userAuth) => {
+                dispatch(
+                    login({
+                        email:userAuth.user.email,
+                        uuid: userAuth.user.uid,
+                        displayName: userAuth.user.displayName,
+                        profileUrl: userAuth.user.photoURL
+                    })
+                )
+            }
+        ).catch(error => alert(error));
     }
 
     const register = () => {
         if (!name) {
             return alert('Please enter a full name!')
         }
-
         
         auth.createUserWithEmailAndPassword( email, password).then(
             (userAuth) => {
-                console.log(userAuth.user.updateProfile);
+                //console.log(userAuth.user.updateProfile);
                 userAuth.user
                     .updateProfile({
                         displayName: name,

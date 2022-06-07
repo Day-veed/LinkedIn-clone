@@ -1,0 +1,25 @@
+[debug] [2022-05-31T08:48:56.805Z] ----------------------------------------------------------------------
+[debug] [2022-05-31T08:48:56.809Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Adekunle David\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-31T08:48:56.810Z] CLI Version:   11.0.1
+[debug] [2022-05-31T08:48:56.811Z] Platform:      win32
+[debug] [2022-05-31T08:48:56.811Z] Node Version:  v16.13.1
+[debug] [2022-05-31T08:48:56.813Z] Time:          Tue May 31 2022 09:48:56 GMT+0100 (West Africa Standard Time)
+[debug] [2022-05-31T08:48:56.814Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-31T08:48:56.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-31T08:48:56.833Z] > authorizing via signed-in user (davidadekunle9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\javascriptprojects\linkedin-clone-yt
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

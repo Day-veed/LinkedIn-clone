@@ -1,8 +1,7 @@
-//import { initializeApp } from 'firebase/app';
-//import { getFirestore } from 'firebase/firestore/lite';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
+import 'firebase/compat/storage';
 //import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
